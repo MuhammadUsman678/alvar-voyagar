@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\NewsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,6 +19,9 @@ Route::get('/', function () {
 });
 
 
+
+
 Route::group(['prefix' => 'admin'], function () {
+    Route::get('news/replicate/{id}/{edit?}',[NewsController::class,'replicate'])->name('news.replicate');
     Voyager::routes();
 });
