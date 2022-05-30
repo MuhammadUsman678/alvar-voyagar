@@ -331,7 +331,7 @@
                                                     class="btn btn-sm btn-info pull-right copy" data-id="{{ $data->{$data->getKeyName()} }}"
                                                     id="delete-1">
                                                     <i class="voyager-edit"></i> <span
-                                                        class="hidden-xs hidden-sm">Copy</span>
+                                                        class="hidden-xs hidden-sm">Copy & Edit</span>
                                                 </a>
 
                                             </td>
